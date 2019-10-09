@@ -585,6 +585,8 @@ var FollowControl = function (eid, elem, params) {
                 }
                 doFinishedLogUpdate();
             }.bind(this))
+        } else {
+            doFinishedLogUpdate();
         }
     },
     /** Process entries in batches of size to prevent blocking the renderer **/
